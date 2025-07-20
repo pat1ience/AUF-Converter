@@ -57,11 +57,6 @@ img {
     color: rgba(0, 0, 0, 0.616);
 }
 
-.input-webkit-outer-spin-button,
-.input::-webkit-inner-spin-button {
--webkit-appearance: none;
-}
-
 .result15, .result20 {
     margin-top: 15px;
     font-size: 40px;
