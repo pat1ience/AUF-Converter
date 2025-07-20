@@ -5,10 +5,7 @@
 }
 
 body {
-    background-image: url('/image/foto-risunka-tekstury-steny-fotor-202507018236.jpg');
-    background-position: -50%;
-    background-size: cover;
-    height: 350px;
+    background: #1a1a1a;
     color: white;
     font-family: "Crimson Text", serif;
     font-weight: 400;
@@ -78,7 +75,7 @@ img {
     border-radius: 35px;
     font-size: 30px;
     background: rgb(238, 210, 1);
-    margin-top: 320px;
+    margin-top: 25git 0px;
 }
 
 .btn:hover {
