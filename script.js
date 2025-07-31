@@ -8,7 +8,7 @@ const how20 = document.querySelector('.how20')
 
 function calculateDiscount15() {
     const inputValue = inputNumber.value;
-    const percent15 = (inputValue * 15 / 100).toFixed(0);
+    const percent15 = (inputValue * 10 / 100).toFixed(0);
     const overall = inputValue - percent15;
     result15.innerHTML = `Со скидкой: <br>${overall} сом`;
     how.innerHTML = `(${percent15})`
