@@ -17,29 +17,32 @@ img {
 }
 
 .container {
+    width: 1350px;
     display: flex;
-    justify-content: center;
-    gap: 400px;
+    margin: 0 auto;
+    gap: 200px;
+    align-items: center;
+    height: 750px;
 }
 
 .wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid white;
+    border: 1px solid rgb(238, 210, 1);
     padding: 30px;
     border-radius: 20px;
     margin-top: 100px;
 }
 .title {
-    font-size: 40px;
+    font-size: 70px;
     text-align: center;
     color: rgb(238, 210, 1);
 }
 
 .input {
-    width: 150px;
-    height: 80px;
+    width: 300px;
+    height: 90px;
     border-radius: 30px;
     border: none;
     outline: none;
@@ -55,8 +58,8 @@ img {
 }
 
 .result15, .result20 {
-    margin-top: 15px;
-    font-size: 40px;
+    margin-top: 40px;
+    font-size: 50px;
     color: rgb(238, 210, 1);
     text-align: center;
     font-weight: 400;
@@ -64,17 +67,16 @@ img {
 
 .how, .how20 {
     margin-top: -36px;
-    font-size: 20px;
+    font-size: 30px;
     color: rgb(255, 248, 199);
     text-align: center;
 }
 
 .btn {
-    width: 250px;
-    height: 70px;
+    padding: 20px;
     border-radius: 35px;
-    font-size: 30px;
-    margin-top: 250px;
+    font-size: 40px;
+    margin-top: 150px;
     background: rgb(238, 210, 1);
 }
 .btn:hover {
@@ -85,7 +87,7 @@ img {
 
 /*  */
 
-.converter__wrapper {
+/* .converter__wrapper {
     margin-top: 0px;
     display: flex;
     gap: 150px;
@@ -118,12 +120,12 @@ img {
     color: rgb(238, 210, 1);
     text-align: center;
     font-size: 90px;
-}
+} */
 
 .instagram {
     font-size: 20px;
     color: rgba(255, 255, 255, 0.671);
     text-align: end;
-    margin-top: 130px;
+    margin-top: 100px;
     padding-right: 5px;
 }

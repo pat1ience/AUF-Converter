@@ -39,38 +39,38 @@ inputNumber20.addEventListener('keydown', (event) => {
 // 
 
 
-const somInput = document.getElementById('som')
-const usdInput = document.getElementById('usd')
-const cnyInput = document.getElementById('cny')
+// const somInput = document.getElementById('som')
+// const usdInput = document.getElementById('usd')
+// const cnyInput = document.getElementById('cny')
 
-const converter = (input, target2, target3) => {
-    input.oninput = () => {
-        const xhr = new XMLHttpRequest
-        xhr.open('GET', '/converter.json')
-        xhr.setRequestHeader('Contetnt-type', 'applcation/json')
-        xhr.send()
+// const converter = (input, target2, target3) => {
+//     input.oninput = () => {
+//         const xhr = new XMLHttpRequest
+//         xhr.open('GET', '/converter.json')
+//         xhr.setRequestHeader('Contetnt-type', 'applcation/json')
+//         xhr.send()
 
-        xhr.onload = () => {
-            const data = JSON.parse(xhr.response)
-            const inputValue = input.value
-            const inputId = input.id
-            if (inputId === 'som') {
-                target2.value = (inputValue / data.usd).toFixed(2)
-                target3.value = (inputValue / data.cny).toFixed(2)
-            } else if (inputId === 'usd') {
-                target2.value = (inputValue * data.usd).toFixed(2)
-                target3.value = (inputValue * data.usd / data.cny).toFixed(2)
-            } else if (inputId === 'cny') {
-                target2.value = (inputValue * data.cny).toFixed(2)
-                target3.value = (inputValue * data.cny / data.usd).toFixed(2)
-            }
-            if (inputValue === '') {
-                target2.value = ''
-                target3.value = ''
-            }
-        }
-    }
-}
-converter(somInput, usdInput, cnyInput)
-converter(usdInput, somInput, cnyInput)
-converter(cnyInput, somInput, usdInput)
+//         xhr.onload = () => {
+//             const data = JSON.parse(xhr.response)
+//             const inputValue = input.value
+//             const inputId = input.id
+//             if (inputId === 'som') {
+//                 target2.value = (inputValue / data.usd).toFixed(2)
+//                 target3.value = (inputValue / data.cny).toFixed(2)
+//             } else if (inputId === 'usd') {
+//                 target2.value = (inputValue * data.usd).toFixed(2)
+//                 target3.value = (inputValue * data.usd / data.cny).toFixed(2)
+//             } else if (inputId === 'cny') {
+//                 target2.value = (inputValue * data.cny).toFixed(2)
+//                 target3.value = (inputValue * data.cny / data.usd).toFixed(2)
+//             }
+//             if (inputValue === '') {
+//                 target2.value = ''
+//                 target3.value = ''
+//             }
+//         }
+//     }
+// }
+// converter(somInput, usdInput, cnyInput)
+// converter(usdInput, somInput, cnyInput)
+// converter(cnyInput, somInput, usdInput)
