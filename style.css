@@ -119,3 +119,11 @@ img {
     text-align: center;
     font-size: 90px;
 }
+
+.instagram {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.671);
+    text-align: end;
+    margin-top: 130px;
+    padding-right: 5px;
+}
