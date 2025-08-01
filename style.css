@@ -23,6 +23,7 @@ img {
     gap: 200px;
     align-items: center;
     height: 750px;
+    position: relative;
 }
 
 .wrapper {
@@ -34,6 +35,15 @@ img {
     border-radius: 20px;
     margin-top: 100px;
 }
+
+.auf__start {
+    position: absolute;
+    color: rgb(238, 210, 1);
+    font-size: 100px;
+    top: -50px;
+    left: 440px;
+}
+
 .title {
     font-size: 70px;
     text-align: center;
