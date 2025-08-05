@@ -12,18 +12,14 @@ body {
     font-style: normal;
 }
 
-img {
-    margin-left: 44%
-}
-
 .container {
-    width: 1350px;
     display: flex;
-    margin: 0 auto;
-    gap: 200px;
+    justify-content: space-around;
+    /* gap: 150px; */
     align-items: center;
-    height: 750px;
+    /* height: 750px; */
     position: relative;
+    margin-top: 50px;
 }
 
 .wrapper {
@@ -40,8 +36,8 @@ img {
     position: absolute;
     color: rgb(238, 210, 1);
     font-size: 100px;
-    top: -50px;
-    left: 440px;
+    top: -120px;
+    left: 700px;
 }
 
 .title {
@@ -82,55 +78,19 @@ img {
     text-align: center;
 }
 
-.btn {
+.btnPr {
     padding: 20px;
     border-radius: 35px;
     font-size: 40px;
-    margin-top: 150px;
     background: rgb(238, 210, 1);
 }
-.btn:hover {
+.btnPr:hover {
     cursor: pointer;
     transform: scale(1.2);
     transition: .3s;
 }
 
-/*  */
 
-/* .converter__wrapper {
-    margin-top: 0px;
-    display: flex;
-    gap: 150px;
-    text-align: center;
-    justify-content: center;
-}
-
-.converter__wrapper input {
-    outline: none;
-    padding: 15px 15px;
-    font-size: 32px;
-    border-radius: 15px;
-    text-align: center;
-    background: rgb(238, 210, 1);
-    border: none;
-}
-
-.converter__wrapper input::placeholder {
-    color: rgba(0, 0, 0, 0.792);
-    font-size: 25px;
-}
-
-.converter__wrapper label {
-    color: rgb(238, 210, 1);
-    font-size: 32px;
-    margin-left: 100px;
-}
-
-.converter__title {
-    color: rgb(238, 210, 1);
-    text-align: center;
-    font-size: 90px;
-} */
 
 .instagram {
     font-size: 20px;
@@ -138,4 +98,163 @@ img {
     text-align: end;
     margin-top: 100px;
     padding-right: 5px;
+}
+
+
+/*  */
+
+/* 
+    colors
+    bg #000
+    orange #ff9501
+    grey #a6a6a6
+    white #fdfdfd
+*/
+
+
+/* .calc {
+    /* width: 300px;
+    height: 500px;
+    border: 1px solid rgb(238, 210, 1);
+    margin-top: 200px;
+    background: #000;
+    border-radius: 20px;
+    color: #fdfdfd;
+    font-family: Arial;
+    display: grid;
+    padding: 18px;
+    box-shadow: 4px 4px 6px #4f4f4f; 
+}
+
+.calc-screen {
+    height: 125px;
+    position: relative;
+    padding: 10px;
+    display: grid;
+    justify-items: end;
+    align-items: end;
+}
+
+.calc-screen p {
+    text-align: right;
+    font-size: 50px;
+    margin: 0;
+}
+
+.buttons {
+    display: grid;
+    grid-template-areas: 
+    "ac plus-minus percent division"
+    "seven eigth nine multi"
+    "four five siz minus"
+    "one two three plus"
+    "zero zero dot equal";
+    grid-gap: 7px;
+    justify-items: center;
+    align-items: center;
+}
+
+
+
+.btn {
+    width: 60px;
+    height: 60px;
+    background: #333;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 63px;
+    font-size: 25px;
+    cursor: pointer;
+    outline: none;
+    user-select:none
+
+}
+.btn:hover {
+    filter: brightness(130%);
+}
+.btn:active {
+    filter: brightness(90%);
+}
+.bg-grey {
+    background-color: #a6a6a6;
+}
+
+.bg-dark-grey {
+    background-color: #333;
+}
+
+.bg-orange {
+    background-color: #ff9501;
+}
+
+.btn.ac {
+    
+}
+
+.btn.plus-minus {
+    grid-area: plus-minus;
+}
+
+.btn.percent {
+    grid-area: percent;
+}
+
+.btn.division {
+    grid-area: division;
+} 
+
+.btn.zero {
+    grid-area: zero;
+    width: 100%;
+    border-radius: 34px;
+} */
+
+.calc {
+    margin-top: 80px;
+    width: 450px;
+    /* height: 600px; */
+    background: black;
+    padding: 20px 0;
+    border-radius: 30px;
+    border: 2px solid rgb(238, 210, 1); 
+}
+.display {
+    color: white;
+    font-size: 55px;
+    text-align: end;
+    padding-right: 40px;
+    padding-top: 20px;
+}
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center
+}
+.button {
+    padding: 20px 35px;
+    font-size: 35px;
+    background: rgb(51, 51, 51);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: rgb(121, 121, 121);
+}
+
+.btn-grey {
+    padding: 20px 30px;
+    background: rgb(92, 92, 92);
+    border-radius: 50px;
+    font-size: 25px;
+    line-height: 50px;
+}
+.btn-orange {
+    background: orange;
+}
+.btn-zero {
+    width: 125px;
+    background: rgb(92, 92, 92);
+    border-radius: 50px;
 }

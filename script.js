@@ -2,7 +2,7 @@ const inputNumber = document.getElementById('inputNumber');
 const inputNumber20 = document.getElementById('inputNumber20');
 const result15 = document.querySelector('.result15');
 const result20 = document.querySelector('.result20');
-const button = document.querySelector('.btn');
+const button = document.querySelector('.btnPr');
 const how = document.querySelector('.how')
 const how20 = document.querySelector('.how20')
 
@@ -74,3 +74,59 @@ inputNumber20.addEventListener('keydown', (event) => {
 // converter(somInput, usdInput, cnyInput)
 // converter(usdInput, somInput, cnyInput)
 // converter(cnyInput, somInput, usdInput)
+
+// const somInput = document.getElementById('som')
+// const usdInput = document.getElementById('usd')
+// const cnyInput = document.getElementById('cny')
+
+// const converter = (input, target2, target3) => {
+//     input.oninput = () => {
+//         const xhr = new XMLHttpRequest
+//         xhr.open('GET', '/converter.json')
+//         xhr.setRequestHeader('Contetnt-type', 'applcation/json')
+//         xhr.send()
+    
+//         xhr.onload = () => {
+//             const data = JSON.parse(xhr.response)
+//             const inputValue = input.value
+//             const inputId = input.id
+//             if (inputId === 'som') {
+//                 target2.value = (inputValue / data.usd).toFixed(2)
+//                 // target3.value = ()
+//             }
+//         }
+//     }
+
+// }
+// converter(somInput, usdInput, cnyInput)
+// // converter(usdInput, somInput, cnyInput)
+// // converter(cnyInput, somInput, usdInput)
+
+
+// 
+
+const display = document.querySelector('.display')
+const buttons = Array.from(document.querySelectorAll('.button'))
+
+buttons.map((button) => {
+    button.addEventListener('click', (e) => {
+        switch (e.target.innerText) {
+            case "AC":
+                display.innerText ='0'
+                break;
+            case '=':
+                display.innerText = eval(display.innerText)
+                break;
+            case '%':
+                let passedText = display.innerText + '/100'   
+                display.innerText = eval(passedText)
+            default:
+                if(display.innerText === '0' && e.target.innerText != '.') {
+                    display.innerText = e.target.innerText
+                } else {
+                    display.innerText += e.target.innerText
+                }
+        }
+        
+    })
+})
